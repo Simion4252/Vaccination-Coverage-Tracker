@@ -1,0 +1,26 @@
+[
+  {
+    "region": "North",
+    "age_group": "0-17",
+    "gender": "Female",
+    "date": "2025-01-01",
+    "doses_administered": 120,
+    "coverage_percentage": 45.2
+  },
+  {
+    "region": "North",
+    "age_group": "18-49",
+    "gender": "Male",
+    "date": "2025-01-01",
+    "doses_administered": 230,
+    "coverage_percentage": 63.5
+  },
+  {
+    "region": "South",
+    "age_group": "50+",
+    "gender": "Female",
+    "date": "2025-01-01",
+    "doses_administered": 180,
+    "coverage_percentage": 71.4
+  }
+]
