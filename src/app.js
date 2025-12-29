@@ -32,5 +32,9 @@ app.use("/metrics", require("./routes/metrics.routes"));
 app.get("/health", (req, res) => {
   res.status(200).json({ status: "ok" });
 });
+app.get('/seed', async (req, res) => {
+  await seed(); // your existing seed function
+  res.send('DB seeded!');
+});
 
 module.exports = app;
