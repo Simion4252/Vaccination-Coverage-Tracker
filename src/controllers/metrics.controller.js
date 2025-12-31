@@ -6,7 +6,7 @@ exports.getOverview = async (req, res) => {
       SELECT
         COALESCE(SUM(doses_administered), 0) AS total_doses,
         COUNT(*) AS total_records,
-        COUNT(DISTINCT regiThis already satisfies all core backend requirements of the VCT project.on) AS regions_covered,
+        COUNT(DISTINCT region) AS regions_covered,
         MIN(date_recorded) AS from_date,
         MAX(date_recorded) AS to_date
       FROM vaccination_data
@@ -26,6 +26,7 @@ exports.getOverview = async (req, res) => {
     res.status(500).json({ message: "Failed to load overview stats" });
   }
 };
+
 exports.getByRegion = async (req, res) => {
   try {
     const result = await db.query(`
@@ -50,6 +51,7 @@ exports.getByRegion = async (req, res) => {
     res.status(500).json({ message: "Failed to load region stats" });
   }
 };
+
 exports.getByAgeGroup = async (req, res) => {
   try {
     const result = await db.query(`
@@ -74,6 +76,7 @@ exports.getByAgeGroup = async (req, res) => {
     res.status(500).json({ message: "Failed to load age group stats" });
   }
 };
+
 exports.getTimeSeries = async (req, res) => {
   try {
     const result = await db.query(`
@@ -96,6 +99,7 @@ exports.getTimeSeries = async (req, res) => {
     res.status(500).json({ message: "Failed to load time series data" });
   }
 };
+
 exports.getByGender = async (req, res) => {
   try {
     const result = await db.query(`
