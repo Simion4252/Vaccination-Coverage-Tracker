@@ -43,4 +43,10 @@ app.get('/seed', async (req, res) => {
   res.send('DB seeded!');
 });
 
+
+app.use(cors({
+  origin: '*', // For development, allow everything
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  allowedHeaders: ['Content-Type', 'Authorization'] // <--- THIS IS CRITICAL
+}));
 module.exports = app;
