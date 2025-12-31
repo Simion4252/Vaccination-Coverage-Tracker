@@ -20,9 +20,6 @@ const app = express();
 require("dotenv").config();
 
 const http = require("http");
-const { neon } = require("@neondatabase/serverless");
-
-const sql = neon(process.env.DATABASE_URL);
 
 const requestHandler = async (req, res) => {
   const result = await sql`SELECT version()`;
