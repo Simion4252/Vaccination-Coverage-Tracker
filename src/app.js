@@ -26,7 +26,7 @@ const http = require("http");
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://your-frontend.vercel.app"
+    "https://vaccination-coverage-tracker-2-1kgb.onrender.com"
   ],
   credentials: true
 }));
