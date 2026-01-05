@@ -3,10 +3,10 @@ A full-stack web application for tracking, analyzing, and visualizing vaccinatio
 Live Application
 
 **Backend API (Render)**
-https://vaccination-coverage-tracker-2.onrender.com
+https://vaccination-coverage-tracker-3.onrender.com
 
-**Frontend (Vercel)**
-(add your frontend URL here if deployed)
+**Frontend (Render)**
+https://vaccination-coverage-tracker-2-1kgb.onrender.com
 
 **Project Overview**
 
@@ -30,7 +30,7 @@ Frontend (React)
 Backend API (Node.js + Express)
      |
      v
-PostgreSQL Database (Neon)
+PostgreSQL (Database)
 
 **Technology Stack**
 Frontend
@@ -47,7 +47,7 @@ JWT Authentication
 bcrypt
 
 **Database**
-PostgreSQL (Neon – serverless)
+PostgreSQL
 
 **Deployment**
 Backend: Render
